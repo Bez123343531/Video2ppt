@@ -29,9 +29,7 @@ export default struct Video2PPTMainPage {
 
       if (!this.selectedVideo) {
         VideoSourceSelector({
-          onVideoSelected: (info: VideoInfo): void => {
-            this.selectedVideo = info;
-          },
+          selectedVideo: this.selectedVideo
         })
       } else {
         Column() {
